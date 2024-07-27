@@ -1,0 +1,56 @@
+{
+  "name": "ethereum-boilerplate",
+  "version": "2.0.0",
+  "private": true,
+  "homepage": "https://eth-boilerplate.vercel.app/",
+  "scripts": {
+    "format": "prettier . \"**/*.+(js|ts|json)\" --write --ignore-path .gitignore",
+    "format:check": "prettier \"**/*.+(js|ts|json)\" --check --ignore-path .gitignore",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test:e2e": "start-server-and-test dev http://localhost:3000 test:cypress",
+    "test:cypress": "cypress run --browser chrome --headless"
+  },
+  "dependencies": {
+    "@chakra-ui/icons": "^2.1.1",
+    "@chakra-ui/react": "^2.8.2",
+    "@emotion/react": "^11",
+    "@emotion/styled": "^11",
+    "@moralisweb3/next": "^2.27.0",
+    "@tanstack/react-query": "^5.51.15",
+    "@web3modal/wagmi": "^5.0.8",
+    "@web3uikit/core": "^1.1.5",
+    "@web3uikit/icons": "^1.1.2",
+    "eslint-config-next": "^14.2.5",
+    "ethers": "^6.13.2",
+    "framer-motion": "^11",
+    "hardhat": "^2.22.6",
+    "moralis": "^2.27.0",
+    "next": "^14.2.5",
+    "next-auth": "^4.24.7",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "viem": "^2.18.2",
+    "wagmi": "^2.12.1"
+  },
+  "devDependencies": {
+    "@moralisweb3/eslint-config": "^1.0.3",
+    "@types/node": "20.14.12",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "@typescript-eslint/eslint-plugin": "^7.17.0",
+    "@typescript-eslint/parser": "^7.17.0",
+    "cypress": "^13.13.1",
+    "eslint": "9.8.0",
+    "eslint-plugin-cypress": "^3.4.0",
+    "eslint-plugin-etc": "^2.0.3",
+    "prettier": "3.3.3",
+    "start-server-and-test": "^2.0.4",
+    "typescript": "^5.5.4"
+  },
+  "engines": {
+    "node": "^12.19.0 || ^14.15.0 || ^16.13.0 || ^21.6.0"
+  }
+}
